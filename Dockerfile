@@ -4,3 +4,7 @@ RUN pip install --upgrade pip
 COPY pdfminer-master/ /pdfminer-master/
 RUN cd /pdfminer-master/ && python setup.py install
 
+COPY pdfs/ /pdfs/
+COPY reader_run_holder.sh /usr/bin/
+
+CMD ["reader_run_holder.sh"]
