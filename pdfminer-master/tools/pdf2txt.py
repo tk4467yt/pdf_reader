@@ -30,7 +30,7 @@ def main(argv):
     # input option
     password = ''
     pagenos = set()
-    maxpages = 0
+    maxpages = 10
     # output option
     outfile = None
     outtype = None
